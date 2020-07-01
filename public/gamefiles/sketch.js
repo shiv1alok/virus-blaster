@@ -245,7 +245,7 @@ function Sketch() {
                     let r = asteroids[i].getArgs()[2];
                     let mass = asteroids[i].getMass();
                     asteroids.splice(i, 1);
-                    let index = asteroids.push(new Asteroid([x - r / 2, min(y, 3 * cannon.getTop()[1]), r / 2, -1, mass / 2], blastImage)) - 1;
+                    let index = asteroids.push(new Asteroid([x - r / 2, min(y, 3 * cannon.getTop()[1]), r, -1, mass / 2], blastImage)) - 1;
                     setTimeout(() => {
                         asteroids.splice(index, 1);
                     }, 200);
@@ -274,7 +274,4 @@ function Sketch() {
 
         scoreP.html("High Score:" + highScore + "<br>Score:" + score);
     }
-
-        let gameIntro = document.getElementById("gameintroaudio");
-        gameIntro.play();
 }
