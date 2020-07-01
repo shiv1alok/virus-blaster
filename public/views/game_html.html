@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable = no" />
+    <meta http-equiv="Content-Security-Policy" content="connect-src 'self'" />
+    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
+    <script language="javascript" type="text/javascript" src="gamefiles/helper.js"></script>
+    <script language="javascript" type="text/javascript" src="gamefiles/sketch.js"></script>
+    <script language="javascript" type="text/javascript" src="gamefiles/cannon.js"></script>
+    <script language="javascript" type="text/javascript" src="gamefiles/bullet.js"></script>
+    <script language="javascript" type="text/javascript" src="gamefiles/asteroid.js"></script>
+    <script language="javascript" type="text/javascript" src="gamefiles/powerup.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script>
+        Sketch();
+    </script>
+</head>
+
+<body>
+    <audio id="gunshotaudio" >
+        <source src="./sounds/gun-gunshot.wav" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="explosionaudio" >
+        <source src="./sounds/explosion.wav" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="gameintroaudio" >
+        <source src="./sounds/gameintro.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <!-- <button id="btnaudio" onclick="playAudio()" type="button">Play Audio</button> -->
+    <!-- <button id="btnToggleGame" onclick="toggleGame()" type="button">Game mode</button> -->
+
+    <!-- <label class="switch">
+        <input id="switch-input" type="checkbox" onclick="handleGameMode(this);">
+        <span class="slider round"></span>
+    </label> -->
+
+    <div class="container">
+        <div class="canvas-container" id="canvascontainer" style="width: 100%;"></div>
+    </div>
+
+    <script>
+
+        function handleGameMode(cb) {
+            // let x = document.getElementById("canvascontainer");
+            // if(cb.checked) {
+            //     let gameIntro = document.getElementById("gameintroaudio");
+            //     gameIntro.play();
+            //     x.style.display = "block";
+            //     x.style.width = "100%";
+            // } else {
+            //     x.style.display = "none";
+            //     Sketch.resetG();
+            // }
+        }
+    </script>
+</body>
+
+</html>
