@@ -44,7 +44,7 @@ app.use( (req, res, next) => {
 });
 
 // Start server
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 const server = app.listen(PORT, () => {
     console.log("Server listening on port " + PORT);
 })
