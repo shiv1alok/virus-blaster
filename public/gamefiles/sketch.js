@@ -274,4 +274,7 @@ function Sketch() {
 
         scoreP.html("High Score:" + highScore + "<br>Score:" + score);
     }
+
+        let gameIntro = document.getElementById("gameintroaudio");
+        gameIntro.play();
 }
