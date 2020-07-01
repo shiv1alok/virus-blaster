@@ -17,8 +17,8 @@ function Sketch() {
     // DOM elements for score
     let canvas;
     let scoreP;
-    let highScore;
-    let score;
+    let highScore = 0;
+    let score = 0;
     let scoreToSend = 0;
 
     // Graphics
