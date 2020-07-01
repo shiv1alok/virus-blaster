@@ -71,13 +71,13 @@ function Sketch() {
         // Update data to DB
         // updateTable("/sendData");
 
-        socket = io.connect("localhost:3000");
-        // socket = io.connect("https://asteroid-blaster.herokuapp.com/");
-        socket.on("setScore", (data) => {
-            score = data.score;
-            highScore = data.highScore;
-            scoreToSend = data.highScore;
-        });
+        // socket = io.connect("localhost:3000");
+        // // socket = io.connect("https://asteroid-blaster.herokuapp.com/");
+        // socket.on("setScore", (data) => {
+        //     score = data.score;
+        //     highScore = data.highScore;
+        //     scoreToSend = data.highScore;
+        // });
 
     }
 
