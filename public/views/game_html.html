@@ -4,9 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable = no" />
     <meta http-equiv="Content-Security-Policy" content="connect-src 'self'" />
-    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
-    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
-    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
+    <script language="javascript" type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+    <script language="javascript" type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+    <script language="javascript" type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
     <script language="javascript" type="text/javascript" src="gamefiles/helper.js"></script>
     <script language="javascript" type="text/javascript" src="gamefiles/sketch.js"></script>
     <script language="javascript" type="text/javascript" src="gamefiles/cannon.js"></script>
@@ -19,16 +22,16 @@
     </script>
 </head>
 
-<body>
-    <audio id="gunshotaudio" >
+<body onload="playStartSound()">
+    <audio id="gunshotaudio">
         <source src="./sounds/gun-gunshot.wav" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
-    <audio id="explosionaudio" >
+    <audio id="explosionaudio">
         <source src="./sounds/explosion.wav" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
-    <audio id="gameintroaudio" >
+    <audio id="gameintroaudio">
         <source src="./sounds/gameintro.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
@@ -45,6 +48,14 @@
     </div>
 
     <script>
+
+        function playStartSound() {
+            // document.getElementById('canvascontainer').click();
+            // setTimeout(() => {
+            //     let gameIntro = document.getElementById("gameintroaudio");
+            //     gameIntro.play();
+            // }, 100);
+        }
 
         function handleGameMode(cb) {
             // let x = document.getElementById("canvascontainer");

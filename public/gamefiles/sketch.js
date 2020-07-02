@@ -89,7 +89,7 @@ function Sketch() {
         // let w = canvasParent.offsetWidth * .9;
         let w = canvasParent.offsetWidth; // to allow full width of screen
         let h = windowHeight;
-        canvas = createCanvas(w, h).addClass("col-12");
+        canvas = createCanvas(w, h).addClass("full-width");
         canvas.parent(canvasParent);
         // canvasParent.style.display = 'none';
 
