@@ -37,7 +37,7 @@ class Bullet {
     // Display the bullet
     show() {
         stroke(125);
-        fill(102,255,255);
+        fill(255);
         ellipse(this.x, this.y, this.r, this.r);
     }
 }
