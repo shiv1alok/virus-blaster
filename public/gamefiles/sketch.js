@@ -131,6 +131,9 @@ function Sketch() {
                 if (start == false) {
                     start = true;
                     unpauseGame();
+                    // play intro sound
+                    let explosion = document.getElementById("gameintroaudio");
+                    explosion.play();
                 }
                 cannon.updateX(mouseX);
                 cannon.setShoot();
